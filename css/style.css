@@ -1,0 +1,151 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+}
+/* //////// navbar start ///////////////// */
+#navBar-1 {
+  display: block;
+}
+.logo1 {
+  width: 72px;
+  height: 72px;
+  background-color: #40bfff;
+  border-radius: 16px;
+  margin: auto;
+}
+.logo2 {
+  width: 44px;
+  height: 44px;
+}
+nav ul li {
+  list-style: none;
+  font-weight: bold;
+}
+.icon-cart {
+  cursor: pointer;
+}
+.icon-cart span {
+  display: flex;
+  width: 22px;
+  height: 22px;
+  background-color: #fb7181;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -12px;
+  right: -30px;
+}
+.icon-cart i {
+  font-size: 22px;
+}
+.h41 {
+  color: #223263;
+}
+.h51 {
+  color: #9098b1;
+}
+form input[type="submit"]:hover {
+  background-color: #fff;
+  border: 1px solid #33a0ff;
+  color: #33a0ff !important;
+}
+#user-info {
+  display: none;
+}
+/* //////// navbar end ///////////////// */
+/* ////////// login and register start */
+.inp1 {
+  height: 55px;
+  color: #9098b1;
+  border-radius: 5px;
+  border: 1px solid #9098b1;
+}
+.inp-name {
+  top: 15px;
+  left: 10px;
+  color: #9098b1;
+}
+::placeholder {
+  color: #9098b1;
+}
+.inp2 {
+  height: 55px;
+  border-radius: 5px;
+  background-color: #40bfff;
+  border: none;
+}
+.h61 {
+  color: #9098b1;
+}
+.h62 {
+  color: #fb7181;
+}
+.h61 a {
+  color: #40bfff;
+  text-decoration: none;
+}
+/* ////////// login and register end */
+/* /////////////  home page start /////////////// */
+.section3-content-div {
+  position: relative;
+  border: 1px solid #e8e8e8;
+  border-radius: 17px;
+}
+.overlay {
+  position: absolute;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  transform: rotateY(90deg);
+  background-color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+.section3-content-div:hover .overlay {
+  transform: rotateY(0deg);
+}
+.icon-s,
+.icon-y {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #33a0ff;
+  text-align: center;
+  font-size: 25px;
+  color: #33a0ff;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.icon-s:hover {
+  background-color: #33a0ff;
+  color: #fff;
+}
+.icon-y {
+  background-color: #33a0ff;
+  color: #fff;
+}
+.icon-y:hover {
+  background-color: #fff;
+  color: #33a0ff;
+}
+.cart {
+  position: fixed;
+  top: 0px;
+  left: 100%;
+  overflow-y: scroll;
+  height: 100vh;
+}
+#qty {
+  display: none;
+}
+#pro {
+  display: none;
+}
+#favo {
+  display: none;
+}
+#cartCount {
+  display: none;
+}
+/* /////////////  home page end /////////////// */

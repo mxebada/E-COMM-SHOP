@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Comm Shop</title>
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+  </head>
+  <body>
+    <!-- /// navbar start /// -->
+    <header>
+      <div class="container-fluid" id="navBar-1">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/index.html"
+                ><div class="text-center d-flex">
+                  <div class="logo2 logo1">
+                    <img
+                      src="./images/Group 389.png"
+                      class="col-7 mt-2"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="h41 fw-bold ms-4 fs-3 ms-3 mt-1">E-comm</h4>
+                </div></a
+              >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div
+                  class="collapse navbar-collapse ps-5"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 ms-5">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active fw-bold ms-4"
+                        aria-current="page"
+                        href="#"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active fw-bold ms-4"
+                        aria-current="page"
+                        href="#"
+                        >Bags</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active fw-bold ms-4"
+                        aria-current="page"
+                        href="#"
+                        >Sneakers</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active fw-bold ms-4"
+                        aria-current="page"
+                        href="#"
+                        >Belt</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active fw-bold ms-4"
+                        aria-current="page"
+                        href="#"
+                        >Contact</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <ul id="links" class="d-flex mt-3">
+                  <li>
+                    <a
+                      href="./login.html"
+                      class="text-decoration-none border py-2 px-4 rounded-3 me-1"
+                      >Sign In</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./register.html"
+                      class="text-decoration-none border ms-3 py-2 px-4 rounded-3"
+                      >Sign Up</a
+                    >
+                  </li>
+                </ul>
+                <ul
+                  class="navbar-nav me-auto mb-2 mb-lg-0 col-4"
+                  id="user-info"
+                >
+                  <li
+                    class="nav-item col-1 col-md-2 mt-3 ms-5"
+                    id="cart-product"
+                  >
+                    <div class="position-relative col-1 icon-cart">
+                      <span id="cartCount" class="position-absolute text-center"
+                        >0</span
+                      >
+                      <i class="fa-solid fa-cart-shopping fs-5"></i>
+                    </div>
+                  </li>
+                  <li class="nav-item col-8">
+                    <a class="navbar-brand d-flex col-6" href="#">
+                      <img
+                        src="./images/ebada.jpg"
+                        width="50"
+                        height="50"
+                        class="rounded-circle"
+                        alt="" />
+                      <h3 class="fs-5 mt-2 ms-2" id="user"></h3
+                    ></a>
+                  </li>
+                  <li class="mt-3" id="logout">
+                    <a
+                      href="#"
+                      class="text-decoration-none border ms-3 py-2 px-4 rounded-3"
+                      >Logout</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- /// navbar end /// -->
+
+    <main>
+      <div class="container container-1">
+        <div class="container product-1">
+          <div class="col-8 m-auto my-5">
+            <input
+              type="text"
+              id="searchBar"
+              class="col-12 p-3 rounded-3 fs-5"
+              placeholder="Search About Product..."
+              style="border: 1px solid #9098b1; outline: none"
+            />
+          </div>
+
+          <!-- /// Products start /// -->
+          <div class="col-12 b d-flex flex-wrap" id="products"></div>
+          <!-- /// Products end /// -->
+        </div>
+
+        <!-- /// Cart Start /// -->
+        <div class="col-11 cart">
+          <div class="d-flex justify-content-between">
+            <h1 class="m-5 h41">Cart Shopping</h1>
+            <div class="mt-2 me-4" id="closecart">
+              <i
+                class="fas fa-x me-5 mt-5 fs-1"
+                style="color: #ff4252; cursor: pointer"
+              ></i>
+            </div>
+          </div>
+          <div
+            class="container justify-content-between border border-start-0 border-end-0 border-top-0 mt-4 py-2"
+            id="qty"
+          >
+            <h4 class="col-6">PRODUCT</h4>
+            <div class="col-6 d-flex justify-content-between">
+              <h4 class="d-none d-lg-block">PRICE</h4>
+              <h4 class="d-none d-lg-block">QTY</h4>
+              <h4 class="d-none d-lg-block">UNIT PRICE</h4>
+            </div>
+          </div>
+          <div class="col-12 mb-5 pb-4" id="listcard"></div>
+
+          <div
+            class="col-10 col-md-5 mt-3 justify-content-around m-auto rounded-1"
+            id="pro"
+            style="height: 70px; background-color: #f6f7f8"
+          >
+            <h2 class="fs-1 m-2">Total</h2>
+            <h2 class="fs-1 m-2">:</h2>
+            <h2 class="fs-1 m-2" id="total">00.00</h2>
+          </div>
+
+          <div class="justify-content-center" id="favo">
+            <h1 class="m-5 h41">My Favorites</h1>
+          </div>
+          <div class="col-12 b mb-5 d-flex flex-wrap" id="likedProduct"></div>
+        </div>
+        <!-- /// cart end /// -->
+      </div>
+    </main>
+
+    <script src="./js/user.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+  </body>
+</html>
